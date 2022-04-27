@@ -26,7 +26,7 @@ always@(posedge clk or negedge rst)
         end
 
 assign in_1=out1+out2;
-assign out=in-in_1+out3+out4;
+assign out=in-in_1+out3+out4;//为单个计算单元的逻辑，参考IIR的图理解即可
 
 
 fixpmul fixpmul_1(.a(a2),.b(reg2),.o(out1));

@@ -27,7 +27,7 @@ always@(posedge clk or negedge rst)
         begin 
           buffer0<=in-in_1; 
           buffer1<=reg1;
-          buffer2<=reg2;
+          buffer2<=reg2;//见报告中描述
           reg1<=in-in_1; 
           reg2<=reg1;
           result<=out;

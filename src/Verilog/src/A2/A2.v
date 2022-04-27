@@ -3,7 +3,7 @@ module A2(
   input clk,
   input rst,
   input wire [31:0]data,
-  output reg [31:0]result,
+  output reg [31:0]result,//结果对比A1用reg表示
   output reg [15:0]ad,
   output reg finish_flag);
   
@@ -56,7 +56,7 @@ module A2(
     ppl_in<=data;
     ppl_0<=out_0;
       ad<=ad+1;
-    if(ad==10018)
+    if(ad==10018//流水线级数多了，最后这个值相比A1也会变化
       finish_flag<=1;
   end
 
